@@ -3,6 +3,7 @@
 // @namespace       *
 // @include         https://de*.die-staemme.de*screen=map*
 // @grant           none
+// @author          Browndy
 // ==/UserScript==
 
 TWMap.graphics = "https://raw.githubusercontent.com/Browndy/tw-map-packs/master/packs/classic/graphics/";
