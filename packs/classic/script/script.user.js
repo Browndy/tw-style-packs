@@ -1,18 +1,22 @@
 // ==UserScript==
+// @author          Browndy
 // @name            Tribalwars Classic Map
 // @namespace       *
 // @include         https://de*.die-staemme.de*screen=map*
-// @grant           none
-// @author          Browndy
+// @grant           GM_addStyle
+// @require         https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
+// @run-at          document-end
 // ==/UserScript==
 
-TWMap.graphics = "https://raw.githubusercontent.com/Browndy/tw-map-packs/master/packs/classic/graphics/";
-TWMap.graphics += TWMap.classic_gfx ? "" : "n_";
+var map = typeof unsafeWindow != 'undefined' ? unsafeWindow.TWMap : window.TWMap;
 
-$("a[id^='map']")[0].style.backgroundImage = 'url(' + TWMap.graphics + 'gras4.png)'
+map.graphics = "https://raw.githubusercontent.com/Browndy/tw-map-packs/master/packs/classic/graphics/";
+map.graphics += map.night ? "n_" : "";
 
-$("img[id^='map_village']").each(function() {
+$("#map")[0].style.backgroundImage = 'url(' + map.graphics + 'gras4.png)'
+
+$("#map").find("img").each(function() {
 	var path = this.src.split("/");
 	var fileName = path[path.length -1];
-	this.src = TWMap.graphics + fileName;
+	this.src = map.graphics + fileName;
 });
