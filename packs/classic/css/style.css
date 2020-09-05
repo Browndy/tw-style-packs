@@ -1,13 +1,17 @@
 /* stuff */
 
 .header.no_new_post {
-    background-position: -235px -3px;
+	position: relative;
+	top: -2px;
+    background-position: -235px -2px;
     width: 13px;
     height: 13px;
 }
 
 .header.new_post {
-    background-position: -92px -3px;
+	position: relative;
+	top: -2px;
+    background-position: -92px -2px;
     width: 13px;
     height: 13px;
 }
@@ -2295,6 +2299,8 @@ td.topbar div#topContainer {
 }
 
 td.topbar table.menu tr td#topdisplay {
+	position: relative;
+	top: 3px;
 	background: none;
 	height: auto;
 	
@@ -3323,7 +3329,7 @@ td.maincell { float: none !important; }
   background: #F7EED3;
   border-collapse: collapse;
   margin: 0;
-  padding: 3px 7px;
+  padding: 5px 7px;
   white-space: nowrap;
   height: auto;
 }
