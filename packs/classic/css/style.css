@@ -6,6 +6,12 @@
     height: 13px;
 }
 
+.header.new_post {
+    background-position: -92px -3px;
+    width: 13px;
+    height: 13px;
+}
+
 .visual-label a {
     color: white !important;
 }
@@ -2281,7 +2287,7 @@ td.topbar table.menu tr td.rpad {
 
 td.topbar div#topContainer {
 	position: fixed;
-	top: 2px; 
+	top: 0px; 
 	left: 0; 
 	width: 100%;
 	margin-top: 0;
