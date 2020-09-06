@@ -1060,14 +1060,12 @@ height:8px;
 
 .igmline .postheader_right {
 float:right;
-line-height:16px;
 min-height:16px;
 padding-right:4px;
 }
 
 .igmline .postheader_left {
 float:left;
-line-height:16px;
 min-height:16px;
 }
 
@@ -2129,7 +2127,6 @@ table.vis tr.row_a td { background-color:#F6EBCA; background-image:none;}
 table.vis tr.row_b td { background-color:#FBF4DD; background-image:none;}
 table.vis tr.subheader td { background-color:#EBD7B0; background-image:none;}
 table.vis tr.edit_player_colors td{ background-image:none;}
-table.vis tr td img {vertical-align: middle;}
 
 table.overview_table tbody.row_marker.selected td { background-color:#FADC9B;}
 table.overview_table tr.selected td { background-color:#FADC9B;}
@@ -2920,7 +2917,7 @@ table.quote td.quote_message { background-color:#FFFFFF; font-size: 8pt; }
 .post { border: 2px solid #804000; background-color: #f8f4e8; padding:0px; margin-bottom:5px;}
 .igmline { background-color:#efe6c9; padding-left:4px; border-bottom:1px solid #804000; position:relative;}
 .text { padding:6px; }
-.date { font-size:x-small; right:5px; position:absolute;}
+.date { font-size:x-small; padding-right:3px; position:relative;}
 .right { right:5px; position:absolute; }
 
 #igm_groups { position:absolute;z-index:100; border: 2px solid #804000; background-color:#efe6c9;}
