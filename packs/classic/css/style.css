@@ -3366,6 +3366,8 @@ td.maincell { float: none !important; }
 }
 
 .maincell {
+	position: relative;
+	right: 24px;
 	background: none !important;
 }
 
