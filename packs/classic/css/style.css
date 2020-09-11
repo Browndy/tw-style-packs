@@ -2,6 +2,12 @@
 
 /* stuff */
 
+.fixed #topTable {
+    position: relative;
+    margin: 0px auto;
+    left: 24px;
+}
+
 .header.no_new_post {
 	position: relative;
 	top: -2px;
@@ -3367,8 +3373,6 @@ td.maincell { float: none !important; }
 }
 
 .maincell {
-	position: relative;
-	right: 24px;
 	background: none !important;
 }
 
