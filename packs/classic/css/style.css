@@ -1,9 +1,7 @@
 /* #Modified by Browndy */
 
-/* TROLL*/
-
 body {
-	background:#d2c09e url(https://raw.githubusercontent.com/Browndy/tw-style-packs/master/packs/classic/bg/bg.png) fixed center top repeat;
+	background:#d2c09e url(https://raw.githubusercontent.com/Browndy/tw-style-packs/master/packs/classic/bg/standard.png) fixed center bottom repeat;
 }
 
 /* stuff */
@@ -1280,7 +1278,6 @@ z-index:9999;
 }
 
 body {
-background:#d2c09e url(https://raw.githubusercontent.com/Browndy/tw-style-packs/master/packs/classic/bg/bg.png) fixed center top repeat;
 font-size:9pt;
 font-family:Verdana, Arial;
 width:100%;
