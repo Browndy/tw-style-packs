@@ -1,11 +1,14 @@
 // ==UserScript==
 // @name            Tribalwars Classic Map
-// @version         1.0
+// @version         1.1
 // @author          Browndy
 // @description     *
 // @homepage        https://gist.github.com/Browndy/550af7a1c4d505fc118a5c1b2df95f38/raw/script.user.js
 // @namespace       *
-// @match           https://*.die-staemme.de/game.php?*&screen=map*
+// @match           https://*.die-staemme.de/game.php?*screen=map*
+// @match           https://*.die-staemme.de/guest.php?*screen=map*
+// @match           https://*.tribalwars.net/game.php?*screen=map*
+// @match           https://*.tribalwars.net/guest.php?*screen=map*
 // @run-at          document-end
 // ==/UserScript==
 
@@ -21,3 +24,4 @@ window.addEventListener ("load", function() {
     if (game_data.player.is_guest === undefined) return;
     $("#map_container")[0].children[0].remove();
 });
+
