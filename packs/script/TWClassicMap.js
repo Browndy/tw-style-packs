@@ -9,9 +9,9 @@
 	map.graphics += map.night ? "n_" : "";
 	
 	// document-idle
-	//window.addEventListener ("load", function() {
+	window.addEventListener ("load", function() {
 		map.reload()
     	if (game_data.player.is_guest === undefined) return;
     	$("#map_container")[0].children[0].remove();
-	//});
+	});
 })();
