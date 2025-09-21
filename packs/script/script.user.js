@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name            Tribalwars Classic Map
 // @version         1.1
-// @author          Browndy
-// @description     *
+// @author          Browndy (.net) aka JPsGameShow (.de)
+// @description     Allows usage of older Map-Skins
 // @homepage        https://gist.github.com/Browndy/550af7a1c4d505fc118a5c1b2df95f38/raw/script.user.js
 // @namespace       *
 // @match           https://*.die-staemme.de/game.php?*screen=map*
@@ -12,10 +12,11 @@
 // @run-at          document-end
 // ==/UserScript==
 
-var map = typeof unsafeWindow != 'undefined' ? unsafeWindow.TWMap : window.TWMap;
+const win = typeof unsafeWindow != 'undefined' ? unsafeWindow : window;
+const map = typeof unsafeWindow != 'undefined' ? unsafeWindow.TWMap : window.TWMap;
 
 // classic, new, new_skins
-const pack = win.TWCM_pack || "classic";
+const pack = win.TWCM_pack || "new";
 
 map.graphics = "https://raw.githubusercontent.com/Browndy/tw-style-packs/master/packs/" + pack + "/graphics/";
 map.graphics += map.night ? "n_" : "";
