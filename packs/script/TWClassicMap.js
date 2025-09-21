@@ -13,7 +13,7 @@
 	
 	// document-idle
 	window.addEventListener ("load", function() {
-		map.reload()
+		map.reload();
     	if (game_data.player.is_guest === undefined) return;
     	$("#map_container")[0].children[0].remove();
 	});
