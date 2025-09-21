@@ -4,6 +4,7 @@
 	
 	// classic, new, new_skins
 	const pack = win.TWCM_pack || "new";
+	console.log("loading " + pack + " map");
 	
 	map.graphics = "https://raw.githubusercontent.com/Browndy/tw-style-packs/master/packs/" + pack + "/graphics/";
 	map.graphics += map.night ? "n_" : "";
