@@ -15,7 +15,7 @@
 var map = typeof unsafeWindow != 'undefined' ? unsafeWindow.TWMap : window.TWMap;
 
 // classic, new, new_skins
-var pack = "classic"
+const pack = win.TWCM_pack || "classic";
 
 map.graphics = "https://raw.githubusercontent.com/Browndy/tw-style-packs/master/packs/" + pack + "/graphics/";
 map.graphics += map.night ? "n_" : "";
