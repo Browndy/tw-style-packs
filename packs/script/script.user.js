@@ -8,18 +8,16 @@
 // @match           https://*.die-staemme.de/guest.php?*screen=map*
 // @match           https://*.tribalwars.net/game.php?*screen=map*
 // @match           https://*.tribalwars.net/guest.php?*screen=map*
-// @run-at          document-end
 // ==/UserScript==
 
 (function () {
 	'use strict';
 
 	const win = typeof unsafeWindow != 'undefined' ? unsafeWindow : window;
-	const map = typeof unsafeWindow != 'undefined' ? unsafeWindow.TWMap : window.TWMap;
 
 	// classic, new, new_skins
 	win.TWCM_pack = "new";
 
 	win.$.ajaxSetup({cache: true});
-	win.$.getScript("https://github.com/Browndy/tw-style-packs/blob/master/packs/script/TWClassicMap.js");
+	win.$.getScript("https://browndy.github.io/DieStämme-Stuff/TW%20Classic%20Map/TWClassicMap.js");
 })();
