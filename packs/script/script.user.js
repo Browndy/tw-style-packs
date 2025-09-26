@@ -10,14 +10,12 @@
 // @match           https://*.tribalwars.net/guest.php?*screen=map*
 // ==/UserScript==
 
-(function () {
-	'use strict';
+'use strict';
 
-	const win = typeof unsafeWindow != 'undefined' ? unsafeWindow : window;
+const win = typeof unsafeWindow != 'undefined' ? unsafeWindow : window;
 
-	// classic, new, new_skins
-	win.TWCM_pack = "new";
+// classic, new, new_skins
+win.TWCM_pack = "new";
 
-	win.$.ajaxSetup({cache: true});
-	win.$.getScript("https://browndy.github.io/DieStämme-Stuff/TW%20Classic%20Map/TWClassicMap.js");
-})();
+win.$.ajaxSetup({cache: true});
+win.$.getScript("https://browndy.github.io/DieStämme-Stuff/TW%20Classic%20Map/TWClassicMap.js");
