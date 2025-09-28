@@ -8,6 +8,7 @@
 // @match           https://*.die-staemme.de/guest.php?*screen=map*
 // @match           https://*.tribalwars.net/game.php?*screen=map*
 // @match           https://*.tribalwars.net/guest.php?*screen=map*
+// @run-at          document-start
 // ==/UserScript==
 
 'use strict';
